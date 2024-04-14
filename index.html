@@ -15,11 +15,11 @@
       <div class="navbar">
         <img src="pngegg.png" alt="">
         <ul class="links">
-            <li><a href="#">GAME</a></li>
-            <li><a href="#">NEWS</a></li>
-            <li><a href="#">EASPORT</a></li>
-            <li><a href="#">SHOW</a></li>
-            <li><a href="#">SUPPORT</a></li>
+            <li><a class="e1" href="#" style="font-family: sen; font-size: 18px;">GAME</a></li>
+            <li><a class="e2" href="#" style="font-family: sen; font-size: 18px;">NEWS</a></li>
+            <li><a class="e3" href="#" style="font-family: sen; font-size: 18px;">EASPORT</a></li>
+            <li><a class="e4" href="#" style="font-family: sen; font-size: 18px;">SHOW</a></li>
+            <li><a class="e5" href="#" style="font-family: sen; font-size: 18px;">SUPPORT</a></li>
         </ul>
         <div class="toggle">
           <i class="fa-solid fa-bars"></i>
@@ -43,20 +43,28 @@
       <i class="fa-brands fa-steam fa-beat" style="color: #ffffff;"><a href="#" style="font-size: 20px;">STEAM</a></i>
     </div>
     <div class="dropdown">
-      <li><a href="#">hame</a></li>
-      <li><a href="#">hame</a></li>
-      <li><a href="#">hame</a></li>
-      <li><a href="#">hame</a></li>
-      <li><a href="#">hame</a></li>
+      <H1 class="all_game">MENU</H1>
+      <li><a href="#">HALO:WAR</a></li>
+      <li><a href="#">HALO:REACH</a></li>
+      <li><a href="#">HALO:CONBAT EVOLVED</a></li>
+      <li><a href="#">HALO:SPARTAN STRIKE</a></li>
+      <li><a href="#">HALO INFANITE</a></li>
     </div>
     <script>
       const togglebtn = document.querySelector('.toggle')
-      const toggleicon = document.querySelector('.toggle i')
+      const togglebtnicon = document.querySelector('.toggle i')
       const dropdown = document.querySelector('.dropdown')
 
-      togglebtn.onclick = function(){
+      togglebtn.onclick = function (){
         dropdown.classList.toggle('open')
+        const isopen = dropdown.classList.contains('open')
+
+        togglebtnicon.classList = isopen
+        ? 'fa-solid fa-xmark'
+        : 'fa-solid fa-bars'
+      
       }
+
     </script>
 </body>
 </html>
